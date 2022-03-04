@@ -1,5 +1,7 @@
 # Symblog
 
+## BD db_blog.sql
+
 ## Redirección 
 127.0.0.1 blogMVC.local
 
