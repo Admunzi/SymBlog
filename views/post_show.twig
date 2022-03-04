@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Post{% endblock%}
+
+{% block body %}
+    <article class="blog">
+        <header>
+            <h2>{{ posts.title }}</h2>
+        </header>
+        <img src="../img/{{ posts.image }}" />
+        <div class="snippet">
+            <p>{{ posts.content }}</p>
+        </div>
+    </article>
+
+    {{ include ('comments.twig') }}
+{% endblock %}
