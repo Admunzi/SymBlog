@@ -13,7 +13,6 @@ class BlogController extends BaseController{
         $all_post = Post::all();
         $posts_select = Post::find($id);
         $comments = Post::find($id)->comments;
-        // $tags = 
 
         return $this->renderHTML(
             'post_show.twig', 
